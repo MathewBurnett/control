@@ -101,7 +101,7 @@ class Event extends Model
 
     public function isOld(): bool
     {
-        return $this->ends_at < date("Y-m-d H:i:s"); 
+        return $this->ends_at < date("Y-m-d H:i:s");
     }
 
     public function getAvailableEventMappings(?EventMapping $existing = null): array
